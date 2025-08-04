@@ -50,7 +50,7 @@ light_frame.pack(pady=10)
 
 light_canvases = []
 lights = []
-light_labels = ["Parachute deployed", "Apogee detected", "Parachute unarmed"]
+light_labels = ["Parachute deployed", "Apogee detected", "Parachute armed"]
 
 for i in range(3):
     light_canvas = tk.Canvas(light_frame, width=30, height=30)
@@ -154,4 +154,5 @@ writer_thread.start()
 
 update_plot()
 update_elapsed_time()
+
 root.mainloop()
